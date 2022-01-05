@@ -1,0 +1,22 @@
+.transition-hide, .transition-show {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background-color: whitesmoke;
+  display: none;
+}
+
+.transition-show {
+  display: block;
+  animation-name: screen-change;
+  animation-duration: 2s;
+}
+
+@keyframes screen-change {
+  0% {opacity: 0;}
+  30% {opacity: 1;}
+  /* Waiting time */
+  70% {opacity: 1;}
+  100% {opacity: 0;}
+}
